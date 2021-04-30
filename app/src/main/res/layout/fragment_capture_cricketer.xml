@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/who_is_the_best_cricketer_in_the_world"
+        android:textSize="@dimen/text_14"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="@dimen/margin_24"
+        android:layout_marginTop="@dimen/margin_24"
+        android:layout_marginLeft="@dimen/margin_24" />
+
+    <RadioGroup
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvName"
+        android:orientation="vertical"
+        android:id="@+id/rgCricketerAction"
+        android:weightSum="2"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/margin_24"
+        android:layout_marginEnd="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_24"
+        android:layout_marginBottom="@dimen/margin_26"
+        >
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="@string/sachin_tendulkar"
+            android:textColor="@android:color/black"
+            android:id="@+id/rbSachin"
+            android:layout_weight="0.5"
+            android:checked="true"
+            />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="@string/virat_kholi"
+            android:textColor="@android:color/black"
+            android:id="@+id/rbVirat"
+            android:layout_weight="0.5"
+            />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="@string/adam_gilchirst"
+            android:textColor="@android:color/black"
+            android:id="@+id/rbAdam"
+            android:layout_weight="0.5"
+            />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="@string/jacques_kallis"
+            android:textColor="@android:color/black"
+            android:id="@+id/rbJacques"
+            android:layout_weight="0.5"
+            />
+
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/btNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="@dimen/margin_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/next"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
