@@ -1,4 +1,6 @@
-package com.task.trivia
+package com.task.trivia.roomDatabase
+
+import com.task.trivia.model.DetailsModel
 
 class DatabaseHelperImpl(private val appDatabase: AppDatabase) : DatabaseHelper {
 

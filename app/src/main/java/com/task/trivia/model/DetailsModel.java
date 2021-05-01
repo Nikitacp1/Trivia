@@ -1,4 +1,4 @@
-package com.task.trivia;
+package com.task.trivia.model;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;

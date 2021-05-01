@@ -1,4 +1,4 @@
-package com.task.trivia;
+package com.task.trivia.roomDatabase;
 
 import androidx.room.Dao;
 import androidx.room.Delete;
@@ -6,10 +6,12 @@ import androidx.room.Insert;
 import androidx.room.Query;
 import androidx.room.Update;
 
+import com.task.trivia.model.DetailsModel;
+
 import java.util.List;
 
 @Dao
-interface DatabaseHelper {
+public interface DatabaseHelper {
 
     @Query("SELECT * FROM detailsmodel")
     List<DetailsModel> fetchAll();

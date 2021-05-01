@@ -1,8 +1,7 @@
-package com.task.trivia
+package com.task.trivia.fragment
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,14 +9,14 @@ import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.widget.AppCompatCheckBox
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.lifecycleScope
+import com.task.trivia.*
+import com.task.trivia.model.DetailsModel
+import com.task.trivia.roomDatabase.DatabaseBuilder
+import com.task.trivia.roomDatabase.DatabaseHelperImpl
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.launch
-import java.util.*
 import kotlin.collections.ArrayList
-import kotlin.coroutines.CoroutineContext
 
 internal class ColorFragment : Fragment() {
 

@@ -1,4 +1,4 @@
-package com.task.trivia
+package com.task.trivia.roomDatabase
 
 import android.content.Context
 import androidx.room.Room

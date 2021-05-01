@@ -2,7 +2,9 @@ package com.task.trivia
 
 import android.app.Application
 import androidx.lifecycle.*
+import com.task.trivia.model.DetailsModel
 import kotlinx.coroutines.launch
+import com.task.trivia.roomDatabase.DatabaseHelper
 
 internal class RoomDBViewModel(private val dbHelper: DatabaseHelper, application: Application) : AndroidViewModel(application) {
 
